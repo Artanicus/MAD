@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 
 from mapadroid.db.PooledQueryExecutor import PooledQueryExecutor
+from mapadroid.utils.gamemechanicutil import form_mapper
 
 
 class DbWebhookReader:
@@ -43,6 +44,7 @@ class DbWebhookReader:
                 "move_2": move_2,
                 "last_scanned": int(last_scanned.replace(tzinfo=timezone.utc).timestamp()),
                 "form": form,
+                "asset": form_mapper(pokemon_id, form),
                 "name": name,
                 "url": url,
                 "latitude": latitude,

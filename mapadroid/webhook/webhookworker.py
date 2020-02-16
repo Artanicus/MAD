@@ -349,7 +349,10 @@ class WebhookWorker:
                 raid_payload["weather"] = raid["weather_boosted_condition"]
 
             if raid["form"] is not None:
-                raid_payload["form"] = raid["form"]
+                 raid_payload["form"] = raid["form"]
+
+            if raid["asset"] is not None:
+                 raid_payload["asset"] = raid["asset"]
 
             if raid["is_ex_raid_eligible"] is not None:
                 raid_payload["is_ex_raid_eligible"] = raid["is_ex_raid_eligible"]
