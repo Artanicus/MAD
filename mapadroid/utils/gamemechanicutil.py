@@ -116,6 +116,9 @@ def form_mapper(mon_id, form_id):
             "65": 0,  # normal
             "66": 61  # alola
         },
+        "59": {
+            "283": 0 # normal
+        },
         "74": {
             "67": 0,  # normal
             "68": 61  # alola
@@ -143,6 +146,9 @@ def form_mapper(mon_id, form_id):
         "105": {
             "79": 0,  # normal
             "80": 61  # alola
+        },
+        "110": {
+            "944": 31 # galarian
         },
         "150": {  # TODO: missing assets
             "133": 0,
@@ -263,6 +269,9 @@ def form_mapper(mon_id, form_id):
             "116": 27,  # dark
             "117": 28,  # fairy
         },
+        "641": {
+            "140": 11,  # incarnate forme
+        }
 
     }
 
